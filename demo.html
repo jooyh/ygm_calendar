@@ -5,10 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/ygm_calendar.css">
-    <script type="text/javascript" src="./js/ygm_calendar.js"></script>
+    <link rel="stylesheet" href="./lib/style/ygm_calendar.css">
+    <script type="text/javascript" src="./lib/js/ygm_calendar.js"></script>
 </head>
 <body>
-    <p>test</p>
+    <div id="ygm-calendar">
+        
+    </div>
+  
+
+
+    <script>
+        var date = new Date();
+        var monthTxt = String(getDate(date)).split("-")[1];
+        var monthData = getMonth(date);
+        console.log('monthData: ', monthData);
+        var monthDateArr = [];
+        for (var i = 0; i <getMonth(date).length; i++) {
+            var monthData = getMonth(date)[i].format("dd");
+            monthDateArr.push(monthData);
+        }
+
+        console.log("!!!", monthDateArr);
+
+        var html = `
+            <div class="ygm-calendar-wrapper">
+                <div class="ygm-calendar-wrap">
+                    <div class="ygm-c-toolbar">
+                        <h2 class="">${monthTxt}월</h2>
+                    </div>
+                    <div class="ygm-c-view-container">
+                        <div class="ygm-c-view-box">
+                            <table class="ygm-c-content">
+                                <thead class="ygm-c-head">
+                                    <tr>
+                                        <td>일</td>
+                                        <td>월</td>
+                                        <td>화</td>
+                                        <td>수</td>
+                                        <td>목</td>
+                                        <td>금</td>
+                                        <td>토</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="ygm-c-body">
+        `;
+
+        // test 변수에 담아서 1, 2, 3, 
+        var test = 0;
+        var test1 = 7;
+
+        for(var i = 0; i < 6; i++){
+            html+=`<tr>`;
+                for(var j = test; j < test1; j++){
+                    test = j;
+                    // if()
+                    html+= `<td>${monthDateArr[j]}</td>`
+                }
+                
+            test1 += 6;
+            html += `</tr>`;
+        }
+        html+= `
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        `;
+        var calendar = document.getElementById("ygm-calendar");
+        calendar.innerHTML = html;
+    </script>
+
 </body>
 </html>

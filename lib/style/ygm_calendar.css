@@ -1,0 +1,12 @@
+* {margin:0;padding:0;box-sizing:border-box;}
+table {border-spacing:0;}
+.ygm-calendar-wrapper {width:100%;}
+.ygm-calendar-wrap .ygm-c-toolbar {text-align:center;}
+.ygm-calendar-wrap .ygm-c-view-box {border-top:1px solid #000;}
+.ygm-calendar-wrap .ygm-c-content {width:100%;}
+.ygm-calendar-wrap .ygm-c-content .ygm-c-head {text-align:center;}
+.ygm-calendar-wrap .ygm-c-content .ygm-c-head tr td{border-right:1px solid #ccc;border-bottom:1px solid #ccc;background:#eee;}
+.ygm-calendar-wrap .ygm-c-content .ygm-c-head tr td:last-child {border-right:0;}
+.ygm-calendar-wrap .ygm-c-content .ygm-c-body {text-align:right;}
+.ygm-calendar-wrap .ygm-c-content .ygm-c-body tr td {height:70px;padding:5px;border-right:1px solid #ccc;border-bottom:1px solid #ccc;vertical-align:top;}
+.ygm-calendar-wrap .ygm-c-content .ygm-c-body tr td:last-child {border-right:0;}

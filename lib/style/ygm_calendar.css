@@ -1,5 +1,5 @@
 .ygm-cal-container{
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
     padding: 0;
 }
@@ -13,6 +13,7 @@
 .ygm-cal-tbl .cel{
     height: 50px;
     width: 50px; 
+    text-align: right;
     vertical-align: top;
     background-color: lightgray;
 }
@@ -33,6 +34,8 @@
 .cel.sun-color{
     color : red;
 }
-.evnt{
+.ygm-evnt-wrap{
     background-color: blueviolet;
+    width: 10px;
+    height: 10px;
 }

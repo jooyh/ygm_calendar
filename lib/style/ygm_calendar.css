@@ -1,40 +1,38 @@
-.cel{
-    display:inline-block;
-    width: 13%;
-    height: 40px;
-    background-color: #ccc;
-}
-li{
-    list-style-type: none;
+.ygm-cal-container{
+    height: 50vh;
     width: 100%;
-    height: 100%;
-}
-ul{
     padding: 0;
-    margin:0;
 }
-#calendar{
-    height: 60vh;
+.ygm-cal-title {
+    text-align: center;
+}
+.ygm-cal-tbl{
+    height: 90%;
     width: 100%;
-    align-content: center;
 }
-.cal-container{
-    margin: auto;
-    padding-top: 5px;
+.ygm-cal-tbl .cel{
+    height: 50px;
+    width: 50px; 
+    vertical-align: top;
+    background-color: lightgray;
 }
-.sat-color{
-    color: blue;
-}
-.sun-color{
-    color: red;
-}
-.select-date{
-    background-color: darkgrey;
-}
-.day-nm{
-    background-color: darkmagenta;
+.cel.day-nm{
+    margin: 0;
+    padding: 0;
+    height: 30px;
     text-align: center;
+    vertical-align: inherit;
+    background-color: magenta;
 }
-.cal-title{
-    text-align: center;
+.cel.select-date{
+    background-color: navajowhite;
+}
+.cel.sat-color{
+    color : blue;
+}
+.cel.sun-color{
+    color : red;
+}
+.evnt{
+    background-color: blueviolet;
 }

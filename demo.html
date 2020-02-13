@@ -14,61 +14,62 @@
     </div>
   
     <script>
-        var date = new Date();
-        var monthTxt = String(getDate(date)).split("-")[1];
-        var monthData = getMonth(date);
-        console.log('monthData: ', monthData);
-        var monthDateArr = [];
-        for (var i = 0; i <getMonth(date).length; i++) {
-            var monthData = getMonth(date)[i].format("dd");
-            monthDateArr.push(monthData);
-        }
+        var today = new Date();
+        initCalenar(today);
+        // var date = new Date();
+        
+        // var monthTxt = String(getDate(date)).split("-")[1];
+        // var monthData = getMonth(date);
+        // console.log('aaaa: ', monthData);
+        // var monthDateArr = [];
+        // for (var i = 0; i <getMonth(date).length; i++) {
+        //     var monthData = getMonth(date)[i].format("dd");
+        //     monthDateArr.push(monthData);
+        // }
 
-        console.log("!!!", monthDateArr);
+        // var html = `
+        //     <div class="ygm-calendar-wrapper">
+        //         <div class="ygm-calendar-wrap">
+        //             <div class="ygm-c-toolbar">
+        //                 <h2 class="">${monthTxt}월</h2>
+        //             </div>
+        //             <div class="ygm-c-view-container">
+        //                 <div class="ygm-c-view-box">
+        //                     <table class="ygm-c-content">
+        //                         <thead class="ygm-c-head">
+        //                             <tr>
+        //                                 <td>일</td>
+        //                                 <td>월</td>
+        //                                 <td>화</td>
+        //                                 <td>수</td>
+        //                                 <td>목</td>
+        //                                 <td>금</td>
+        //                                 <td>토</td>
+        //                             </tr>
+        //                         </thead>
+        //                         <tbody class="ygm-c-body">
+        // `;
 
-        var html = `
-            <div class="ygm-calendar-wrapper">
-                <div class="ygm-calendar-wrap">
-                    <div class="ygm-c-toolbar">
-                        <h2 class="">${monthTxt}월</h2>
-                    </div>
-                    <div class="ygm-c-view-container">
-                        <div class="ygm-c-view-box">
-                            <table class="ygm-c-content">
-                                <thead class="ygm-c-head">
-                                    <tr>
-                                        <td>일</td>
-                                        <td>월</td>
-                                        <td>화</td>
-                                        <td>수</td>
-                                        <td>목</td>
-                                        <td>금</td>
-                                        <td>토</td>
-                                    </tr>
-                                </thead>
-                                <tbody class="ygm-c-body">
-        `;
-
-        for(var i = 0; i < 6; i++){ // 이거 6도 떄려박으면 안될것 같은데... 모르겠어용 
-            html+=`<tr>`;
-                for(var j = 0; j < monthDateArr.length; j++){
-                    // 요기서 어떤 처리가 필요할것 같은데 모르겠어요 ..... 
-                    // 7단위로 끊어야 하눈데....
-                    html+= `<td>${monthDateArr[j]}</td>`; 
-                }
+        // for(var i = 0; i < 6; i++){ // 이거 6도 떄려박으면 안될것 같은데... 모르겠어용 
+        //     html+=`<tr>`;
+        //         for(var j = 0; j < monthDateArr.length; j++){
+        //             // 요기서 어떤 처리가 필요할것 같은데 모르겠어요 ..... 
+        //             // 7단위로 끊어야 하눈데....
+        //             html+= `<td>${monthDateArr[j]}</td>`; 
+        //         }
                 
-            html += `</tr>`;
-        }
-        html+= `
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        `;
-        var calendar = document.getElementById("ygm-calendar");
-        calendar.innerHTML = html;
+        //     html += `</tr>`;
+        // }
+        // html+= `
+        //                         </tbody>
+        //                     </table>
+        //                 </div>
+        //             </div>
+        //         </div>
+        //     </div> 
+        // `;
+        // var calendar = document.getElementById("ygm-calendar");
+        // calendar.innerHTML = html;
     </script>
 
 </body>

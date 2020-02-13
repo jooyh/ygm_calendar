@@ -1,6 +1,7 @@
 * {margin:0;padding:0;box-sizing:border-box;}
 table {border-spacing:0;}
 .ygm-calendar-wrapper {width:100%;}
+
 .ygm-calendar-wrap .ygm-c-toolbar {text-align:center;}
 .ygm-calendar-wrap .ygm-c-view-box {border-top:1px solid #000;}
 .ygm-calendar-wrap .ygm-c-content {width:100%;}

@@ -1,8 +1,8 @@
 .cel{
     display:inline-block;
-    width: 14%;
+    width: 13%;
     height: 100%;
-    /* border : 1px solid #ccc; */
+    background-color: #ccc;
 }
 li{
     list-style-type: none;
@@ -26,4 +26,7 @@ ul{
 }
 .sun-color{
     color: red;
+}
+.select-date{
+    background-color: darkgrey;
 }

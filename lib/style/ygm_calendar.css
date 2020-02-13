@@ -1,13 +1,13 @@
 .cel{
     display:inline-block;
     width: 13%;
-    height: 100%;
+    height: 40px;
     background-color: #ccc;
 }
 li{
     list-style-type: none;
     width: 100%;
-    height: 9vh;
+    height: 100%;
 }
 ul{
     padding: 0;
@@ -16,6 +16,7 @@ ul{
 #calendar{
     height: 60vh;
     width: 100%;
+    align-content: center;
 }
 .cal-container{
     margin: auto;
@@ -29,4 +30,11 @@ ul{
 }
 .select-date{
     background-color: darkgrey;
+}
+.day-nm{
+    background-color: darkmagenta;
+    text-align: center;
+}
+.cal-title{
+    text-align: center;
 }

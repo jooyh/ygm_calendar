@@ -34,6 +34,12 @@
 .cel.sun-color{
     color : red;
 }
+.cel.select-date.today-color{
+    color: #000;
+}
+.cel.today-color{
+    color : navajowhite;
+}
 .ygm-evnt-wrap{
     background-color: blueviolet;
     width: 10px;

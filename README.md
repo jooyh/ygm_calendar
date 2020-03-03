@@ -1,11 +1,14 @@
 # ygm_calendar
 ## calendar js
 
-
+```html
+<div id="calendar"></div>
+```
 ``` javascript
 //Example...
 let calendar = new Calendar({
    dateStr = "2020-05-20" // 기준일
+  ,elId = "calendar"
   ,type = "M" // 달력 타입 (M : 월 달력 , W : 주 달력)
   ,selectAble = true // 달력 선택 가능 여부
   ,eventAble = true // 달력 이벤트 추가 가능여부
